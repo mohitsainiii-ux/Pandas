@@ -22,7 +22,8 @@ sales = pd.DataFrame({
     ],
     "Region": [
         "North", "South", "East", "West",
-        "North", "South", "East", "West"
+        "North", "South", "East", "West",
+        "North", "South", "East"
     ],
     "Quantity": [
         2, 1, 3, 5, 2, 1, 4, 2
@@ -51,12 +52,12 @@ print("\nSales DataFrame with Converted Dates:")
 print(sales)
 
 #find total sales by category
-total_sales_by_category = sales.groupby("Category")["Total_Sales"].sum().reset_index()
+total_sales_by_category = sales.groupby("Category")["Total_Sales"].sum().reset_index
 print("\nTotal Sales by Category:")
 print(total_sales_by_category)
 
 #find total sales by region
-total_sales_by_region = sales.groupby("Region")["Total_Sales"].sum().reset_index()
+total_sales_by_region = sales.groupby("Region")["Total_Sales"].sum().reset_index
 print("\nTotal Sales by Region:")
 print(total_sales_by_region)
 
