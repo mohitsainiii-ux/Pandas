@@ -21,3 +21,4 @@ for file_number, start in enumerate(range(0, len(df), 100), start=1):
     )
 
 print(f"Created {len(df) // 100} files in: {output_dir}")
+print("end")
